@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Me</title>
+<script src="jroapps.js"></script>
+<link rel="icon" href="favicon.ico" />
+<link href="jroapps.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+</head>
+
+<body>
+  <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://jroapps.tech">
+        <strong>jroapps.tech</strong>
+      </a>
+  
+      <a role="button" class="navbar-burger is-dark" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+      
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://jroapps.tech">
+          Home
+        </a>
+  
+        <a class="navbar-item" href="https://jroapps.tech/about.html">
+          About
+        </a>
+
+        <a class="navbar-item" href="https://jroapps.tech/pricing.html">
+          Pricing
+        </a>
+
+        <a class="navbar-item is-active" href="https://jroapps.tech/contact.html">
+            Contact Me
+        </a>
+      </div>
+      
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button learn-more-button" href="https://jroapps.tech/about.html">
+              <i class="fas fa-info-circle"></i>
+              &nbsp;&nbsp; <strong>Learn More</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+      
+<p></p>
+<section class="hero">
+  <div class="hero-body">
+    <h1 class="title">
+      Contact Me!
+    </h1>
+    <p></p>
+    <h2 class="subtitle">
+      I am excited to hear from you! Please fill out the contact form below and I will get back with you as soon as I can!
+    </h2>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <form id="contactForm" action="mail.php" method="POST">
+      <div class="field">
+        <label class="label">Name:</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Your name" name="Name">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Phone Number:</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input" type="text" placeholder="Your phone number" name="Phone">
+          <span class="icon is-small is-left">
+            <i class="fas fa-mobile-alt"></i>
+          </span>
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Email:</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input" type="email" placeholder="Your email address" name="Email">
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Subject</label>
+        <div class="control">
+          <div class="select">
+            <select name="Option" size="1">
+              <option>Website Development
+              </option>
+              <option>Mobile App Pricing
+              </option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Message:</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Type your message here" name="Message"></textarea>
+        </div>
+      </div>
+      
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-dark" type="submit">Submit</button>
+        </div>
+        <div class="control">
+          <button class="button is-light" type="button" onclick="clearForm()">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<br>
+
+<footer class="myfooter">
+  <div class="content has-text-centered">
+    <p></p>
+    <p>
+      jroapps.tech &#169; 2021
+    </p>
+    <!--<p>
+      <a class="facebook" href="https://www.facebook.com">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="twitter" href="https://www.twitter.com">
+        <i class="fab fa-twitter-square"></i>
+      </a>
+    </p>-->
+  </div>
+</footer>
+</body>
+</html>
