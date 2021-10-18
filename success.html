@@ -10,7 +10,7 @@
 <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
 </head>
 
-<body onload="redirect()"">
+<body onload="redirect()">
   <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="https://jroapps.tech">
@@ -72,13 +72,18 @@
 </section>
 
 <br>
-</body>
 
 <footer class="myfooter">
   <div class="content has-text-centered">
     <p></p>
     <p>
-      jroapps.tech &#169; 2021
+      &copy; 
+      <span id="copyright">
+
+        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+
+    </span>
+        jroapps.tech | All Rights Reserved
     </p>
     <!--<p>
       <a class="facebook" href="https://www.facebook.com">
@@ -91,4 +96,5 @@
     </p>-->
   </div>
 </footer>
+</body>
 </html>
